@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw
+    database: snowflake_learning
+    schema: raw
+    tables:
+      - name: customers
+        columns:
+          - name: customer_id
+            tests:
+              - not_null
+              - unique
+      - name: orders_raw
+        columns:
+          - name: order_id
+            tests:
+              - not_null

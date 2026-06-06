@@ -1,0 +1,8 @@
+# Python virtual environment
+dbt-env/
+
+# dbt run artifacts (repo root)
+logs/
+
+# Secrets
+.env
